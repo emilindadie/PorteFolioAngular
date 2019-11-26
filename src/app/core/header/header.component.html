@@ -1,0 +1,19 @@
+<div class="header-container">
+  <nav>
+        <a class="custom-render" mat-button id="open-menu" (click)="toggleSideNav()">
+          <img src="assets/img/burger-menu.png"></a>
+       
+        <a class="right-items" id="linkedin-link" matTooltip="Mon linkedin"
+        aria-label="Bouton pour accéder à mon linkedin"><img src="assets/img/linkedin-logo-white.png"></a>
+        <a class="right-items" id="github-link" matTooltip="Mon github"
+        aria-label="Bouton pour accéder à mon github"><img src="assets/img/github-logo-white.png"></a>
+        <button mat-button class="right-items" [matMenuTriggerFor]="menu"
+        matTooltip="Langue du site"
+        aria-label="Bouton pour modifier la langue du site" [innerHTML]="'LANGUAGE_TITLE' | translate"></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="changeLanguage('fr')" [innerHTML]="'FRENCH_LANGUAGE' | translate"></button>
+        <button mat-menu-item (click)="changeLanguage('en')" [innerHTML]="'ENGLISH_LANGUAGE' | translate"></button>
+      </mat-menu>
+    </nav>
+</div>
+

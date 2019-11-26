@@ -1,0 +1,8 @@
+
+<div *ngIf="(showSpinner$ | async)">
+  <app-loading></app-loading>
+</div>
+<div *ngIf="!(showSpinner$ | async)">
+  <app-home></app-home>
+</div>
+ 

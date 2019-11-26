@@ -1,0 +1,78 @@
+
+
+.experiences-container {
+  margin-top: 28px;
+  padding-left: 39px;
+  width: 84%;
+  float: left;
+  overflow: hidden;
+  .wesquad-container, .next-container, .itnovem-container, .apf-container, .citae-container {
+    min-height: 400px;
+    height: auto;
+    margin-bottom: 60px;
+  }
+
+  .company-logo {
+    margin-bottom: 30px;
+  }
+
+  .company-context-text, .company-missions-text, .company-environnment-text  {
+    width: 90%;
+    font-size: 13px;
+    color: #677799;
+  }
+
+  .company-missions-text, .company-environnment-text {
+    ul {
+      padding-left: 16px;
+
+      li{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .company-environnment-text {
+    margin-bottom: 20px;
+  }
+
+  .itnovem-container{
+
+    #itnovem-left {
+      width: 70%;
+    }
+
+    #itnovem-right{
+      width: 30%;
+    }
+  }
+
+  .next-container{
+
+    #next-left {
+      width: 70%;
+    }
+
+    #next-right{
+      width: 30%;
+
+      img{
+         height: 261px;
+      }
+    }
+  }
+
+  .apf-container{
+    img {
+      height: 155px;
+    }
+  }
+
+  .citae-container{
+    img {
+      height: 80px;
+    }
+  }
+}
+
+

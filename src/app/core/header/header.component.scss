@@ -1,0 +1,49 @@
+.header-container {
+    background: #3b78e7 !important;
+    nav{
+        padding: 7px;
+
+        #open-menu{
+            color: white;
+        }
+        #github-link{
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        #linkedin-link{
+            cursor: pointer;
+            margin-right: 15px;
+        }
+        .right-items{
+            float: right;
+        }
+        #contact-button{
+            margin-right: 15px;
+        }
+        .custom-render:hover{
+            background: #21427F !important;
+        }
+        button, .custom-render{
+            color: white;
+            background: none;
+            box-sizing: border-box;
+            position: relative;
+            cursor: pointer;
+            outline: 0;
+            border: none;
+            -webkit-tap-highlight-color: transparent;
+            display: inline-block;
+            white-space: nowrap;
+            text-decoration: none;
+            vertical-align: baseline;
+            text-align: center;
+            margin: 0;
+            min-width: 88px;
+            line-height: 36px;
+            padding: 0 16px;
+            border-radius: 2px;
+            overflow: visible;
+        }
+    }
+    
+}

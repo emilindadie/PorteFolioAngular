@@ -1,0 +1,14 @@
+<div class="sidebar-container">
+  <div class="sidebar-items">
+    <button mat-button [routerLink]="['/about']" routerLinkActive="active-link" (click)="loadPage('/about')" [innerHTML]="'ABOUT_TITLE' | translate"></button>
+  </div>
+  <div class="sidebar-items">
+    <button mat-button [routerLink]="['/training']" routerLinkActive="active-link" (click)="loadPage('/training')" [innerHTML]="'TRAINING_TITLE' | translate"></button>
+  </div>
+  <div class="sidebar-items">
+    <button mat-button [routerLink]="['/experiences']" routerLinkActive="active-link" (click)="loadPage('/experiences')" [innerHTML]="'EXPERIENCES_TITLE' | translate"></button>
+  </div>
+  <div class="sidebar-items">
+    <button mat-button [routerLink]="['/skills']" routerLinkActive="active-link" (click)="loadPage('/skills')" [innerHTML]="'SKILLS_TITLE' | translate"></button>
+  </div>
+</div>

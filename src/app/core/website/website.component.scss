@@ -1,0 +1,68 @@
+
+app-header{
+    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+app-footer {
+  position: inherit;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3b78e7;
+  color: white;
+  text-align: center;
+  float: left;
+}
+app-table-layout{
+    float: right;
+    width: 16%;
+    position: fixed;
+    height: 100%;
+}
+
+.example-container {
+    width: 100%;
+    top: 50px !important;
+}
+
+  mat-drawer-container{
+    overflow: hidden;
+    border: none;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: #fafafa;
+  }
+
+    .mat-drawer-container{
+    overflow: initial !important;
+    }
+
+.example-sidenav{
+  position: fixed;
+  background: #FCFCFC;
+  width: 250px;
+  height: 100vh;
+  top: 50px !important;
+}
+
+
+@media all and (max-width: 1000px)
+{
+    app-table-layout{
+        display: none;
+    }
+}
+
+@media all and (max-width: 1000px)
+  {
+    app-home, app-skills, app-experiences{
+        width: 100%;
+        float: none !important;
+    }
+  }

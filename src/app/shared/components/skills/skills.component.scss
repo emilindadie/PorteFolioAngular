@@ -1,0 +1,216 @@
+
+.skills-container {
+    width: -webkit-fill-available;
+    overflow: -webkit-paged-x;
+    padding-top: 18px;
+    width: 84%;
+    float: left;
+    overflow: hidden;
+
+    img {
+        cursor: pointer;
+    }
+
+    .update-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #itnovem, #apf, #handi{
+        min-height: 100px;
+        height: auto;
+    }
+    .logo-details-color{
+        font-size: 13px;
+        color: #677799;
+    }
+    
+    .skills-img-container{
+        width: 150px;
+    }
+
+   
+    #js-stack, #java-stack, #dart-stack, #devops-stack{
+        position: relative;
+        margin-bottom: 20px;
+        h4{
+            position: relative;
+            color: #112140;
+        }
+    }
+    
+        .stack{
+            margin-bottom: 40px;
+            text-align: center;
+            height: auto;
+            width: 100%;
+            margin-bottom: 60px; 
+        }
+        
+        .logo-img{
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+        .logo-title{
+            margin-bottom: 14px;
+        }
+        #left-skills-img{
+            width: 25%;
+            margin-right: 5%; 
+        }
+    
+        #right-skills-img{
+            width: 25%;
+            img {
+                height: 140px;
+                border-radius : 10px;
+            }
+        }
+
+        .stack-right {
+            margin-right: 5%;
+        }
+}
+
+
+@media all and (max-width: 959px)
+{
+    .skills-container {
+        #javascript{
+            #angular-skills-img, #left-skills-img, #right-skills-img, #nodejs-skills-img{
+                margin: 0 auto;
+                margin-right: auto !important;
+            }
+            .skills-img-container{
+                width: 40%;
+            }
+        }
+        #java{
+            #java-skills, #spring-skills{
+                margin: 0 auto;
+                margin-right: auto !important;
+            }
+            .skills-img-container{
+                width: 40%;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 600px)
+{
+    .skills-container {
+        #javascript{
+            #skills-img, #angular-skills, #right-skills-img, #nodejs-skills-img{
+                margin: 0 auto;
+                margin-right: auto !important;
+                .logo-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .skills-img-container{
+                width: 40%;
+            }
+        }
+        #java{
+            #java-skills, #spring-skills{
+                margin: 0 auto;
+                margin-right: auto !important;
+                .logo-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .skills-img-container{
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1000px)
+  {
+    .skills-container{
+        width: 100%;
+        float: none !important;
+    }
+  }
+
+
+
+  .notification-container, .js-notification-container , .java-notification-container{
+    position: fixed;
+    top: 0;
+    right: 25px;
+    width: 0;
+    height: 70%;
+    margin-top: 71px;
+    overflow: hidden;
+    z-index: 999;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    border-radius: 8px;
+  }
+  
+  .js-notification-container {
+    background: #657799;
+  }
+
+  .java-notification-container{ 
+    background: #B39450;
+  }
+
+  .selected {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+    width: 275px;
+    right: 25px;
+  }
+  
+  .dismiss {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+    width: 275px;
+    right: -25px;
+
+  }
+  
+  @keyframes slide-in {
+    0% {
+      -webkit-transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(0%);
+    }
+  }
+  
+  @-webkit-keyframes slide-in {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @-webkit-keyframes slide-out {
+    0% {
+      -webkit-transform: translateX(0%);
+    }
+    100% {
+      -webkit-transform: translateX(100%);
+    }
+  }

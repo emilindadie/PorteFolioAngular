@@ -1,0 +1,12 @@
+<div *ngIf="($home | async)">
+    <app-about-table-layout></app-about-table-layout>
+</div>
+<div *ngIf="($skills | async)">
+    <app-skills-table-layout></app-skills-table-layout>
+</div>
+<div *ngIf="($experiences | async)">
+    <app-experiences-table-layout></app-experiences-table-layout>
+</div>
+<div *ngIf="($training | async)">
+    <app-training-table-layout></app-training-table-layout>
+</div>
